@@ -6,7 +6,7 @@
 #    By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/02 23:33:38 by root              #+#    #+#              #
-#    Updated: 2022/09/16 00:27:54 by dantremb         ###   ########.fr        #
+#    Updated: 2022/09/17 23:17:30 by dantremb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ ARFLAGS = rcs
 CFLAGS = -Wall -Wextra -Werror -g
 
 # Sources files
-S = srcs/
+S = 
 SRCS_FILES = coalition.c \
 
 SRCS = $(addprefix $S, $(SRCS_FILES))
@@ -34,7 +34,7 @@ $O%.o: $S%
 
 # Main rule
 all: signature init $(NAME)
-	@echo "$G\n$(NAME) Compiled!$W"
+	@echo "$G\n42Choixpeau Compiled!$W"
 
 # Initialise librairies and making objs folder
 init:
@@ -69,6 +69,6 @@ C = $(shell tput -Txterm setaf 6)
 W = $(shell tput -Txterm setaf 7)
 
 signature:
-	@echo "\n$G+---+---+---+---+---+---+---+---+"
-	@echo "$G|$C	$(NAME) by Dantremb	$G|"
-	@echo "$G+---+---+---+---+---+---+---+---+"
+	@echo "\n$G+---+---+---+---+---+---+---+---+---+---+"
+	@echo "$G|$C	42Choixpeau by Dantremb	$G	|"
+	@echo "$G+---+---+---+---+---+---+---+---+---+---+"
